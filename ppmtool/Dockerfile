@@ -12,4 +12,4 @@ FROM openjdk:11-jdk-slim
 COPY --from=build /target/spring-boot-docker.jar spring-boot-docker.jar
 # ENV PORT=8080
 EXPOSE 8080
-ENTRYPOINT ["java","-jar","demo.jar"]
+ENTRYPOINT ["java","-jar","spring-boot-docker.jar"]
