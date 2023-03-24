@@ -3,13 +3,13 @@
 #
 FROM maven:3.8.2-jdk-11 AS build
 COPY . .
-RUN mvn clean package -DskipTests
+RUN mvn clean package -Pprod -DskipTests
 
 #
 # Package stage
 #
 FROM openjdk:11-jdk-slim
-COPY --from=build /target/spring-boot-docker.jar spring-boot-docker.jar
+COPY --from=build /target/ppmtool-0.0.1-SNAPSHOT.jar ppmtool.jar
 # ENV PORT=8080
 EXPOSE 8080
-ENTRYPOINT ["java","-jar","spring-boot-docker.jar"]
+ENTRYPOINT ["java","-jar","ppmtool.jar"]
