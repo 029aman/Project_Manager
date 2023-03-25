@@ -5,7 +5,7 @@ export const addProjectTask =
   (backlog_id, project_task, history) => async (dispatch) => {
     try {
       await axios.post(`https://ppmtool.onrender.com/api/backlog/${backlog_id}`, project_task);
-      history.push(`https://ppmtool.onrender.com/projectBoard/${backlog_id}`);
+      history.push(`/projectBoard/${backlog_id}`);
       dispatch({
         type: GET_ERRORS,
         payload: {},
