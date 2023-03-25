@@ -15,7 +15,7 @@ import java.security.Principal;
 
 @RestController
 @RequestMapping("/api/project")
-@CrossOrigin
+@CrossOrigin(origins = "*")
 public class ProjectController {
 
     @Autowired
