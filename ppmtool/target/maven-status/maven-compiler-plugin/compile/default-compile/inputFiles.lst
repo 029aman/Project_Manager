@@ -1,5 +1,6 @@
 D:\Coding\github\Project_Manager\ppmtool\src\main\java\io\aman\ppmtool\services\ProjectService.java
 D:\Coding\github\Project_Manager\ppmtool\src\main\java\io\aman\ppmtool\domain\ProjectTask.java
+D:\Coding\github\Project_Manager\ppmtool\src\main\java\io\aman\ppmtool\WebConfig.java
 D:\Coding\github\Project_Manager\ppmtool\src\main\java\io\aman\ppmtool\exceptions\ProjectIdException.java
 D:\Coding\github\Project_Manager\ppmtool\src\main\java\io\aman\ppmtool\web\BacklogController.java
 D:\Coding\github\Project_Manager\ppmtool\src\main\java\io\aman\ppmtool\security\JwtAuthenticationEntryPoint.java
