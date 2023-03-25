@@ -5,7 +5,7 @@ import jwt_decode from "jwt-decode";
 
 export const createNewUser = (newUser, history) => async (dispatch) => {
   try {
-    await axios.post("/api/users/register", newUser);
+    await axios.post("https://ppmtool.onrender.com/api/users/register", newUser);
     history.push("/login");
     dispatch({
       type: GET_ERRORS,
@@ -22,7 +22,7 @@ export const createNewUser = (newUser, history) => async (dispatch) => {
 export const login = (LoginRequest) => async (dispatch) => {
   try {
     //post -> login request
-    const res = await axios.post("/api/users/login", LoginRequest);
+    const res = await axios.post("https://ppmtool.onrender.com/api/users/login", LoginRequest);
 
     //extract the token from res.data
     const { token } = res.data;
